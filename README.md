@@ -7,7 +7,7 @@ linux+nodejs+express+mysql+ejs
 
 ## 安装下载
 
-
+- 下载地址 https://github.com/DZHdzh692817/movie_express/releases
 
 ## 快速使用
 
