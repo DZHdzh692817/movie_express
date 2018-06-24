@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <%include commom/header.ejs%>
+    <div class="container">
+      <ul class="list-unstyled list-inline">
+      <% datas.forEach(function(movie){ %>
+      <li class="mov_li"><ul class="list-unstyled"><li><img src="http://wx1.sinaimg.cn/bmiddle/ed5e6a1dly1fr51vuhcnyj20go0p0jtp.jpg"/></li><li><span><%= movie.mname %></span></li><li class="mbt"><a href="/movie?mid=<%= movie.mid %>" class="btn btn-primary">点击观看</a></li></ul></li>
+      <% }) %>
+      </ul>
+    </div>
+
+    <%include commom/footer.ejs%>
+  </body>
+</html>

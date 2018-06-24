@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <%include ../commom/header.ejs%>
+    <div class="container">
+      <h1><%= title%></h1>
+      <hr>
+
+      <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>电影名称</th>
+                    <th>导演</th>
+                    <th>国家</th>
+                    <th>上映年份</th>
+                    <th>查看</th>
+                    <th>更新</th>
+                    <th>删除</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>机械战警</td>
+                    <td>张艺谋</td>
+                    <td>美国</td>
+                    <td>2001</td>
+                    <td><a href="" class="btn btn-link">查看</a></td>
+                    <td><a href="" class="btn btn-link">更新</a></td>
+                    <td><a href="" class="btn btn-danger">删除</a></td>
+                </tr>
+            </tbody>
+      </table>
+    </div>
+
+    <%include ../commom/footer.ejs%>
+  </body>
+</html>

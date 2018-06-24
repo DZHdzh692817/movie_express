@@ -1,0 +1,12 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.mov_li{width: 210px;background: #fff;border: solid 1px #e3e3e3;border-bottom: solid 1px #ccc;margin-left: 20px;margin-bottom: 20px;}
+.list-unstyled img{width: 200px;height: 260px;padding-top:5px; padding-bottom: 5px;}
+.list-unstyled li span,.list-unstyled li a{padding:10px;display: block;}
+.mbt{margin-bottom: 20px;}

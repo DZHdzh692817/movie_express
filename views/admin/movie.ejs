@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <%include ../commom/header.ejs%>
+    <div class="container">
+      <h1><%= title%></h1>
+      <hr>
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label for="firstname" class="col-sm-2 control-label">电影名称</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="movie_name" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastname" class="col-sm-2 control-label">电影导演</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="movie_own" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastname" class="col-sm-2 control-label">国家</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="country" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastname" class="col-sm-2 control-label">语种</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="language" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastname" class="col-sm-2 control-label">海报地址</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="address" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastname" class="col-sm-2 control-label">片源地址</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="addr" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastname" class="col-sm-2 control-label">上映年代</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="year" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastname" class="col-sm-2 control-label">电影简介</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="infos" placeholder="">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">添加录入</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <%include ../commom/footer.ejs%>
+  </body>
+</html>

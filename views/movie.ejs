@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= datas[0].mname %></title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <%include commom/header.ejs%>
+    <div class="container">
+        <h1><%= datas[0].mname %></h1>
+        <hr>
+        <div class="col-md-4 col-md-push-8" style="">
+            <ul class="list-group">
+                <li class="list-group-item" style="border:none;">电影名字：<%= datas[0].mname %></li>
+                <li class="list-group-item" style="border:none;">导演：<%= datas[0].mown %></li>
+                <li class="list-group-item" style="border:none;">编剧：<%= datas[0].address %></li>
+                <li class="list-group-item" style="border:none;">国家：<%= datas[0].country %></li>
+                <li class="list-group-item" style="border:none;">语言：<%= datas[0].language %></li>
+                <li class="list-group-item" style="border:none;">上映时间：<%= datas[0].year %></li>
+                <li class="list-group-item" style="border:none;">简介：<%= datas[0].infos %></li>
+            </ul>
+        </div>
+        <div class="col-md-8 col-md-pull-4">
+        <img src="http://wx1.sinaimg.cn/bmiddle/ed5e6a1dly1fr51vuhcnyj20go0p0jtp.jpg" />
+        </div>
+    </div>
+
+    <%include commom/footer.ejs%>
+  </body>
+</html>
