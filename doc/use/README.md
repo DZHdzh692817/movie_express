@@ -38,8 +38,11 @@ module.exports = {
 }
 ````
 
-## 设置
+## 下载bootstrap
+
+    npm install bootstrap
 
 
+## 下载jquery
 
-## 获取
+    npm install jquery
